@@ -3,8 +3,8 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel
 from PyQt6.QtGui import QFont
 from PyQt6.QtCore import Qt  # used for alignment
 
-class MainWindow(QMainWindow):
 
+class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setGeometry(500, 100, 500, 500)
@@ -30,15 +30,15 @@ class MainWindow(QMainWindow):
         # Qt.AlignmentFlag.AlignHCenter
         # Qt.AlignmentFlag.AlignVCenter
 
-        label.setAlignment(
-            Qt.AlignmentFlag.AlignCenter | Qt.AlignmentFlag.AlignBottom
-        )
+        label.setAlignment(Qt.AlignmentFlag.AlignCenter | Qt.AlignmentFlag.AlignBottom)
+
 
 def main():
     app = QApplication([])
     window = MainWindow()
     window.show()
     sys.exit(app.exec())
+
 
 if __name__ == "__main__":
     main()

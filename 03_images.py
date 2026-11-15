@@ -2,8 +2,8 @@ import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel
 from PyQt6.QtGui import QPixmap
 
-class MainWindow(QMainWindow):
 
+class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
@@ -19,12 +19,13 @@ class MainWindow(QMainWindow):
         label.setScaledContents(True)
 
         label.setGeometry(
-            # center of the screen 
+            # center of the screen
             (self.width() - label.width()) // 2,
             (self.height() - label.height()) // 2,
             label.width(),
-            label.height()
+            label.height(),
         )
+
 
 def main():
     app = QApplication([])
@@ -32,6 +33,7 @@ def main():
 
     window.show()
     sys.exit(app.exec())
+
 
 if __name__ == "__main__":
     main()

@@ -14,7 +14,6 @@ from PyQt6.QtWidgets import (
 
 # checkbox/radiobutton.*signal*.connect(*slot*)
 class MainWindow(QMainWindow):
-
     def __init__(self):
         super().__init__()
 

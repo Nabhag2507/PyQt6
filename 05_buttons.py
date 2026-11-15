@@ -1,11 +1,9 @@
 import sys
 from tokenize import Triple
-from PyQt6.QtWidgets import(
-    QMainWindow, QApplication, QPushButton, QLabel
-)
+from PyQt6.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel
+
 
 class MainWindow(QMainWindow):
-
     def __init__(self):
         super().__init__()
         self.setGeometry(500, 200, 500, 500)
@@ -14,7 +12,7 @@ class MainWindow(QMainWindow):
     def initUI(self):
         self.button = QPushButton("Click me", self)
         self.label = QLabel("Hello", self)
-        
+
         self.button.setGeometry(150, 200, 200, 100)
         self.button.setStyleSheet("font-size: 30px;")
 
@@ -32,12 +30,14 @@ class MainWindow(QMainWindow):
 
         self.label.setText("Good byee!")
 
+
 def main():
     app = QApplication([])
     window = MainWindow()
 
     window.show()
     sys.exit(app.exec())
+
 
 if __name__ == "__main__":
     main()

@@ -1,12 +1,16 @@
 import sys
 from PyQt6.QtWidgets import (
-    QApplication, QMainWindow, QWidget,
-    QLabel, QLineEdit, QPushButton, QVBoxLayout
+    QApplication,
+    QMainWindow,
+    QWidget,
+    QLabel,
+    QLineEdit,
+    QPushButton,
+    QVBoxLayout,
 )
 
 
 class MainWindow(QMainWindow):
-
     def __init__(self):
         super().__init__()
 
